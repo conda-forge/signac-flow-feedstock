@@ -20,14 +20,16 @@ Python versions 2.7 and 3.4+.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/signac-flow-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/signac-flow-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/signac-flow-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/signac-flow-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/signac-flow-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/signac-flow-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/signac-flow-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/signac-flow-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/signac-flow-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/signac-flow-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/signac-flow-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/signac-flow-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/signac-flow/badges/version.svg)](https://anaconda.org/conda-forge/signac-flow)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/signac-flow/badges/downloads.svg)](https://anaconda.org/conda-forge/signac-flow)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-signac--flow-green.svg)](https://anaconda.org/conda-forge/signac-flow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/signac-flow.svg)](https://anaconda.org/conda-forge/signac-flow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/signac-flow.svg)](https://anaconda.org/conda-forge/signac-flow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/signac-flow.svg)](https://anaconda.org/conda-forge/signac-flow) |
 
 Installing signac-flow
 ======================
