@@ -16,13 +16,13 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  host:
-    - pip
   build:
     - python
     - setuptools
     - enum34  # [py27]
     - jinja2 >=2.8
+  host:
+    - pip
   run:
     - python
     - enum34  # [py27]
