@@ -1,6 +1,6 @@
 {% set name = "signac-flow" %}
-{% set version = "0.6.2" %}
-{% set sha256 = "7325400faae005a9144d19866228b9d3990c01652bf2d670e281b16aa6616be0" %}
+{% set version = "0.6.3" %}
+{% set sha256 = "078a7179081018860b896bd4153adb0d018a6cfd8e4183f1b2528b2158391eb0" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,12 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-    - enum34  # [py27]
-    - jinja2 >=2.8
+    - pip
   run:
     - python
     - enum34  # [py27]
