@@ -18,6 +18,7 @@ build:
 requirements:
   build:
     - python
+    - pip
     - setuptools
     - enum34  # [py27]
     - jinja2 >=2.8
