@@ -24,6 +24,7 @@ requirements:
     - enum34  # [py27]
     - signac
     - jinja2 >=2.8
+    - cloudpickle
 
 test:
   imports:
