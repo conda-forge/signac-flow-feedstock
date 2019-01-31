@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://bitbucket.org/glotzer/signac-flow/get/v{{ version }}.tar.gz
+  url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -31,7 +31,7 @@ test:
     - flow
 
 about:
-  home: http://glotzerlab.engin.umich.edu/signac
+  home: https://signac.io
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -44,7 +44,7 @@ about:
     The implementation is in pure Python, requires signac and is tested for
     Python versions 2.7 and 3.4+.
   doc_url: https://signac-flow.readthedocs.io
-  dev_url: https://bitbucket.org/glotzer/signac-flow
+  dev_url: https://github.com/glotzerlab/signac-flow
 
 extra:
   recipe-maintainers:
