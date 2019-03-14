@@ -1,6 +1,6 @@
 {% set name = "signac-flow" %}
-{% set version = "0.6.4" %}
-{% set sha256 = "529a8f04a81d8ac66ab0e8046a22f786bbfacc3e639501aff8225fd5629b701f" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "4a0c9c9f889f4125b330674fb41af2fc10e6a34516c3d5f216c31e090f561c31" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
