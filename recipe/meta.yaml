@@ -1,6 +1,6 @@
 {% set name = "signac-flow" %}
-{% set version = "0.7.1" %}
-{% set sha256 = "797a9fcc2ba8a4b6c262bb518e7d7934e7b9f892c6b500f7a46ad1a8ace8afdd" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "90be38b4ede668dcfd5eba7bb275df518b772dec9a57f92c9502d2a2e3344733" %}
 
 package:
   name: {{ name|lower }}
