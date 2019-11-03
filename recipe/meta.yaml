@@ -22,10 +22,10 @@ requirements:
   run:
     - python
     - enum34  # [py27]
-    - signac>=1.0.0
+    - signac >=1.0.0
     - jinja2 >=2.8
     - cloudpickle
-    - deprecation>=2
+    - deprecation >=2
 
 test:
   imports:
