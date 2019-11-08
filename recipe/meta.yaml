@@ -1,27 +1,24 @@
-{% set name = "signac-flow" %}
 {% set version = "0.8.0" %}
-{% set sha256 = "90be38b4ede668dcfd5eba7bb275df518b772dec9a57f92c9502d2a2e3344733" %}
 
 package:
-  name: {{ name|lower }}
+  name: signac-flow
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 90be38b4ede668dcfd5eba7bb275df518b772dec9a57f92c9502d2a2e3344733
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
-    - enum34  # [py27]
+    - python >=3
     - signac >=1.0.0
     - jinja2 >=2.8
     - cloudpickle
@@ -33,7 +30,7 @@ test:
 
 about:
   home: https://signac.io
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: 'Project workflow management for signac projects.'
