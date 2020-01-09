@@ -3,18 +3,16 @@ About signac-flow
 
 Home: https://signac.io
 
-Package license: BSD-3-Clause
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Project workflow management for signac projects.
+Summary: Workflow management for signac projects.
 
 The signac-flow tool provides the basic components to setup simple to
 complex workflows for signac projects. That includes the definition of
 data pipelines, execution of data space operations and the submission
 of operations to high-performance super computers.
-The implementation is in pure Python, requires signac and is tested for
-Python versions 2.7 and 3.5+.
 
 
 Current build status
@@ -73,7 +71,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -124,5 +122,6 @@ Feedstock Maintainers
 
 * [@bdice](https://github.com/bdice/)
 * [@csadorf](https://github.com/csadorf/)
+* [@mikemhenry](https://github.com/mikemhenry/)
 * [@vyasr](https://github.com/vyasr/)
 
