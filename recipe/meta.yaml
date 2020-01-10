@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: signac-flow
@@ -6,23 +6,25 @@ package:
 
 source:
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: 90be38b4ede668dcfd5eba7bb275df518b772dec9a57f92c9502d2a2e3344733
+  sha256: 32aa14689cd4907edf9be0b79b50cc66c639082ea2916a6a81357635baca15e4
 
 build:
-  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed ."
+  entry_points:
+    - flow = flow.__main__:main
 
 requirements:
   host:
-    - python >=3
+    - python >=3.5
     - pip
   run:
-    - python >=3
-    - signac >=1.0.0
-    - jinja2 >=2.8
     - cloudpickle
     - deprecation >=2
+    - jinja2 >=2.8
+    - python >=3.5
+    - signac >=1.0.0
 
 test:
   imports:
@@ -30,22 +32,21 @@ test:
 
 about:
   home: https://signac.io
-  license: BSD-3-Clause
+  license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Project workflow management for signac projects.'
+  summary: 'Workflow management for signac projects.'
   description: |
     The signac-flow tool provides the basic components to setup simple to
     complex workflows for signac projects. That includes the definition of
     data pipelines, execution of data space operations and the submission
     of operations to high-performance super computers.
-    The implementation is in pure Python, requires signac and is tested for
-    Python versions 2.7 and 3.5+.
-  doc_url: https://signac-flow.readthedocs.io
+  doc_url: https://docs.signac.io
   dev_url: https://github.com/glotzerlab/signac-flow
 
 extra:
   recipe-maintainers:
-    - csadorf
-    - vyasr
     - bdice
+    - csadorf
+    - mikemhenry
+    - vyasr
