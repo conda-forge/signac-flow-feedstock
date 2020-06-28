@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: signac-flow
@@ -6,25 +6,26 @@ package:
 
 source:
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: 32aa14689cd4907edf9be0b79b50cc66c639082ea2916a6a81357635baca15e4
+  sha256: 16a67d704daeb900cb7d06f5f84f59bf50ae36918b1a30757e0a52f79fb642fa
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed ."
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   entry_points:
     - flow = flow.__main__:main
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
     - cloudpickle
     - deprecation >=2
     - jinja2 >=2.8
-    - python >=3.5
+    - python >=3.6
     - signac >=1.0.0
+    - tqdm >=4.35.0
 
 test:
   imports:
@@ -32,10 +33,10 @@ test:
 
 about:
   home: https://signac.io
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Workflow management for signac projects.'
+  summary: Workflow management for signac projects.
   description: |
     The signac-flow tool provides the basic components to setup simple to
     complex workflows for signac projects. That includes the definition of
@@ -50,3 +51,4 @@ extra:
     - csadorf
     - mikemhenry
     - vyasr
+    - b-butler
