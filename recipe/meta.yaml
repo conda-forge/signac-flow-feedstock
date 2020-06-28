@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://signac.io
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Workflow management for signac projects.
