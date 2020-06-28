@@ -17,14 +17,15 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
     - cloudpickle
     - deprecation >=2
     - jinja2 >=2.8
-    - python >=3.5
+    - python >=3.6
     - signac >=1.0.0
+    - tqdm >=4.35.0
 
 test:
   imports:
