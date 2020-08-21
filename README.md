@@ -3,9 +3,9 @@ About signac-flow
 
 Home: https://signac.io
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Workflow management for signac projects.
 
@@ -120,6 +120,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@b-butler](https://github.com/b-butler/)
 * [@bdice](https://github.com/bdice/)
 * [@csadorf](https://github.com/csadorf/)
 * [@mikemhenry](https://github.com/mikemhenry/)
