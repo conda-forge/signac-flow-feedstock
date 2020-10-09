@@ -5,9 +5,13 @@ Home: https://signac.io
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/signac-flow-feedstock/blob/master/LICENSE.txt)
 
 Summary: Workflow management for signac projects.
+
+Development: https://github.com/glotzerlab/signac-flow
+
+Documentation: https://docs.signac.io
 
 The signac-flow tool provides the basic components to setup simple to
 complex workflows for signac projects. That includes the definition of
