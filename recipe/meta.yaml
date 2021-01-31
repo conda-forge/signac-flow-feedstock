@@ -20,12 +20,12 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - cloudpickle
-    - deprecation >=2
-    - jinja2 >=2.8
+    - cloudpickle >=1.1.1
+    - deprecation >=2.0.0
+    - jinja2 >=2.10
     - python >=3.6
     - signac >=1.0.0
-    - tqdm >=4.35.0
+    - tqdm >=4.48.1
 
 test:
   imports:
