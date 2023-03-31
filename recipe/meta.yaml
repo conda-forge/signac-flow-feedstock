@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
     - cloudpickle >=1.6.0
@@ -25,7 +25,7 @@ requirements:
     - jinja2 >=3.0.0
     - jsonschema >=3.0.0
     - python >=3.8
-    - signac >=1.8.0
+    - signac >=2.0.0
     - tqdm >=4.60.0
 
 test:
