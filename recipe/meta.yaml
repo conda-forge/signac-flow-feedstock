@@ -1,4 +1,4 @@
-{% set version = "0.24.0" %}
+{% set version = "0.25.0" %}
 
 package:
   name: signac-flow
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: 5634869e3aed4aa9ae2bdd04735d22e46fdd571e3019ad7cea19047892919eb3
+  sha256: 5f73a05bfeaa6ffb35d38ba967c43b7c6b4815a1eed316ecd9c5bc2174dee6ec
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
     - cloudpickle >=1.6.0
@@ -25,7 +25,7 @@ requirements:
     - jinja2 >=3.0.0
     - jsonschema >=3.0.0
     - python >=3.8
-    - signac >=1.8.0
+    - signac >=2.0.0
     - tqdm >=4.60.0
 
 test:
