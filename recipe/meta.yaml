@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: 2b5ca862204dd3057d9825009c2f12dc00afebcadca0bcb8b3f387249f18245b
+  sha256: 75fb045d139809d9e68922ca0240fe7d29e1c8c5a00a809061a73a269de9fe61
 
 build:
   noarch: python
