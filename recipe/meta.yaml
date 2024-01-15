@@ -1,4 +1,4 @@
-{% set version = "0.26.1" %}
+{% set version = "0.27.0" %}
 
 package:
   name: signac-flow
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: 0039cb80e709d381b770a2d4ed96c73237c8a2182a9d3320308297c1bebc4c62
+  sha256: c864da7f25f73d6dabcbfa9d558feef45b46cc8e5a0c491a757f79e7a747c08b
 
 build:
   noarch: python
