@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   entry_points:
     - flow = flow.__main__:main
@@ -25,7 +25,7 @@ requirements:
     - jinja2 >=3.0.0
     - jsonschema >=3.0.0
     - python >=3.8
-    - signac >=2.0.0
+    - signac >=2.2.0
     - tqdm >=4.60.0
 
 test:
