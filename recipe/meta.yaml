@@ -1,4 +1,4 @@
-{% set version = "0.28.0" %}
+{% set version = "0.29.0" %}
 
 package:
   name: signac-flow
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/glotzerlab/signac-flow/archive/v{{ version }}.tar.gz
-  sha256: a721ccf176eefc5ab1ace538f8ce3206124fbd10084c8c0c54ab171dfa3ea8d4
+  sha256: 3e397834cef985b44a1a6e4f73e255fc57ac7284feb90a64711ed19161503296
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   entry_points:
     - flow = flow.__main__:main
