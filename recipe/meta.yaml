@@ -10,25 +10,27 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   entry_points:
     - flow = flow.__main__:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
     - cloudpickle >=1.6.0
     - deprecation >=2.0.0
     - jinja2 >=3.0.0
     - jsonschema >=3.0.0
-    - python >=3.8
+    - python >={{ python_min }}
     - signac >=2.2.0
     - tqdm >=4.60.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - flow
 
