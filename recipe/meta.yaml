@@ -19,6 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - cloudpickle >=1.6.0
     - deprecation >=2.0.0
